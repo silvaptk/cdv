@@ -1,0 +1,49 @@
+*
+{
+    font-family: 'Ebrima';
+    font-size: 1.5vh;
+}
+
+html
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+div.titulo
+{
+    font-size: 10vh;
+    text-align: center;
+}
+
+center.fundoImagem
+{
+    width: 60vw;
+    margin-left: 20vw;
+    height: 75vh;
+    background-color: black;
+}
+
+img#imgTeste
+{
+}
+
+button.botao
+{
+    margin-top: 1vh;
+    width: 40%;
+    margin-left: 30%;
+    padding: 1%;
+    font-size: 3vh;
+    background-color: lightgrey;
+    border-style: none;
+    color: dimgray;
+    cursor: pointer;
+}
+

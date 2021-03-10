@@ -1,0 +1,333 @@
+:root
+{
+    --corPrincipal: midnightblue;
+    --fonteTexto: 'Ebrima';
+}
+
+html
+{
+	height: 100%;
+}
+
+@font-face
+{
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.ttf');
+}
+
+body
+{
+    background-image: url('../img/11.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Microsoft YaHei Light';
+	height: 100%;
+    padding: 0;
+}
+
+div#principal
+{
+    background-color: white;
+    width: 60%;
+    margin: 0;
+    margin-left: 20%;
+    padding: 0;
+	opacity: 0.97;
+    vertical-align: middle;
+    height: 100%;
+}
+
+input#voltar	
+{
+    padding: 0;
+    background-color: white;
+    border-width: 0;
+    color: midnightblue;    
+    cursor: pointer;
+	font-family: 'Microsoft YaHei Light';
+    font-size: 1vw;
+	padding: 0.9%;
+	width: 10%;
+	margin-left: 1.2%;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: top;
+}
+
+input#voltar:hover
+{
+    box-shadow: 0px 0px 5px #BBB;
+}
+
+div.titulo
+{
+    margin-top: 2%;
+    width: 100%;
+    font-family: 'Comfortaa';
+    font-size: 5vw;
+    text-align: center;
+    color: midnightblue;   
+	vertical-align: middle;
+	display: inline-block;	
+}
+
+div.subtitulo
+{
+    font-size: 1.4vw;
+    margin-left: 70%;
+    font-family: 'Comfortaa';
+    color: midnightblue;
+}
+
+div.informacao
+{
+    margin-top: 3%;
+    color: midnightblue;
+    font-size: 1.1vw;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+div.tipo
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+button#encontrei
+{
+    width: 15%;
+    margin: 0;
+    padding: 1%;
+    background-color: midnightblue;
+    color: white;
+    font-family: 'Microsoft YaHei Light';
+    font-size: 1vw;
+    border-width: 1px;
+    border-color: midnightblue;
+    border-style: solid;
+}
+
+button#perdi
+{
+    width: 15%;
+    margin: 0;
+    padding: 1%;
+    background-color: white;
+    color: midnightblue;
+    border-color: midnightblue;
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'Microsoft YaHei Light';
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+form#formularioCadastro
+{
+    margin-top: 2%;
+}
+
+div.campo
+{
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var( --corPrincipal );
+    width: 70%;
+    line-height: normal;
+    margin-left: 15%;
+    font-size: 1vw;
+    color: var( --corPrincipal );
+    margin-bottom: 1%;
+}
+
+div.campoDescricao
+{
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var( --corPrincipal );
+    width: 70%;
+    line-height: normal;
+    margin-left: 15%;
+    font-size: 1vw;
+    color: var( --corPrincipal );
+    padding: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 0;
+}
+
+textarea#descricao
+{
+    margin-top: 0;
+    margin: 0;
+    margin-left: 15%;
+    width: 69.6%;
+    border-color: var( --corPrincipal );
+    resize: none;
+    height: 100%;
+    background-color: var( --corPrincipal );
+    margin-bottom: 0;
+    font-size: 1vw;
+    color: white;
+    font-family: var( --fonteTexto );
+    height: 100%;
+    margin-bottom: 0.7%;
+}
+
+input#imagens
+{
+    background-color: midnightblue;
+    font-family: var( --fonteTexto );
+    width: 70%;
+    margin-left: 15%;
+    cursor: pointer;
+    display: none;
+}
+
+input#imagensBotao
+{
+    background-color: midnightblue;
+    font-family: var( --fonteTexto );
+    width: 70.15%;
+    margin-left: 15%;
+    cursor: pointer;
+    
+}
+
+div.campoCategoria
+{
+    margin-top: 1%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 70%;
+    line-height: normal;
+    margin-left: 15%;
+    font-size: 0.8vw;
+    color: var( --corPrincipal );
+    padding: 0;
+    margin-bottom: 1%;
+    text-align: middle;
+    overflow-y: scroll;
+    height: 10vw;
+}
+
+input#categoria
+{
+    width: 100%;
+    margin: 0;
+    font-family: var( --fonteTexto );
+    font-size: 1vw;
+    background-color: white;
+    color: midnightblue;
+    cursor: pointer;
+    transition-duration: 0.5s;    
+    padding: 0.5%;
+    height: 2vw;
+}
+
+input#categoria:hover
+{
+    background-color: midnightblue;
+    color: white;
+}
+
+input
+{
+    width: 70%;
+    margin-left: 1%;
+    height: 100%;
+    background-color: var( --corPrincipal );
+    border-width: 0;
+    padding: 1%;
+    color: white;
+    font-size: 1vw;
+}
+
+div.mensagemErro
+{
+    font-size: 1vw;
+    color: red;
+    text-align: center;
+    margin: 1%;
+    margin-top: 1.5%;
+}
+
+input#botao
+{
+    background-color: midnightblue;
+    color: white;
+    width: 50%;
+    margin: 1%;
+    margin-left: 18%;
+    font-size: 1vw;
+    cursor: pointer;
+	font-family: 'Microsoft YaHei Light';
+    border-width: 0;
+    padding: 1%;  
+	vertical-align: middle;
+	display: inline-block;
+    transition-duration: 0.5s;
+}
+
+input#botao:hover
+{
+    background-color: black;
+}
+
+div.campoSubCategoria
+{
+    /* Div de tudo da SubCategoria*/
+    line-height: normal;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    color: midnightblue;
+    width: 32.19%;
+    display: inline-block;
+    font-size: 1vw;
+    padding-left: 1%;
+    margin-left: 15%;
+}
+
+select#subCategoria
+{
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/   
+    height:1.96vw; /* Altura do select*/ 
+    border:1px solid #ddd;
+    font-size: 1vw;
+    width: 69%;
+    margin-left: 1%;
+}
+
+div.campoDocumento
+{
+
+    height: 100%;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 36%;
+    line-height: normal;    
+    font-size: 1vw;
+    color: midnightblue;
+    display: inline-block;
+}
+
+input#numDocumento
+{
+    height: 1.5vw;
+    width: 57.5%;
+    padding-left: 2%;
+}
+

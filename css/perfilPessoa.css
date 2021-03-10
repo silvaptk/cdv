@@ -1,0 +1,631 @@
+:root
+{
+    --fonteTexto: "Ebrima";   
+    --corPrincipal: midnightblue;
+}
+
+@font-face
+{
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.ttf');
+}
+
+html
+{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #DDD;
+}
+
+div#barraSuperior
+{
+	width: 90%;
+	background-color: var( --corPrincipal );
+	padding: 0.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+form#pesquisa
+{
+	display: inline-block;
+	vertical-align: middle;	
+	width: 35%;
+}
+
+input#pesquisa
+{
+	width: 80%;
+	vertical-align: middle;
+	border-width: 0;
+	padding: 1%;
+	font-size: 110%;
+	box-shadow: 0px 0px 5px #555;	
+}
+
+input#enviar
+{
+	width: 12%;
+	vertical-align: middle;
+	border-width: 0;
+    font-size: 108%;
+    padding: 1%;
+	cursor: pointer;
+	background-image: url('../img/botaoPesquisar.png');
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0px 0px 5px #555;	
+}
+
+div#barraSuperior
+{    
+    position: fixed;
+    top: 0;
+	width: 98%;
+	background-color: white;
+	padding: 0.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+    box-shadow: 0px 0px 0.5vw #AAA;
+    height: 6vw;
+    z-index: 2;
+}
+
+button#perfil
+{
+    margin-left: 30%;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 15%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    height: 6vw;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+    transition-duration: 0.5s;
+}
+
+button#modificarInformacoes
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 25%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+button#sair
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 10%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+button#modificarInformacoes:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+button#sair:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+div.logo
+{
+    width: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+img#logoBarra
+{
+    height: 6vw;
+}
+
+div.titulo
+{
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Comfortaa';
+    font-size: 1.5vw;
+	text-align: center;
+	margin-right: 2%;
+    color: midnightblue;
+    cursor: pointer;
+    border-bottom-color: white;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    transition-duration: 0.5s;
+}
+
+div.titulo:hover
+{
+    border-bottom-color: midnightblue;
+}
+
+div#principal
+{
+	background-color: white;
+	margin-top: 10%;
+	padding-top: 2%;
+}
+
+div.cidadeUFTitulo
+{
+    font-family: 'Comfortaa';
+	font-size: 1.5vw;
+	text-align: center;
+	width: 25%;
+	margin-left: 2%;
+	box-shadow: 0px 0px 10px #AAA;
+	padding: 1%;
+	color: var( --corPrincipal );
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.nomeInstituicao
+{
+	font-family: 'Comfortaa';
+	font-size: 2.5vw;
+	text-align: center;
+	width: 40%;
+	box-shadow: 0px 0px 10px #AAA;
+	padding: 1%;
+	color: var( --corPrincipal );
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.contatoTitulo
+{
+    width: 25%;
+    font-family: 'Comfortaa';
+	font-size: 1.5vw;
+	text-align: center;
+	box-shadow: 0px 0px 10px #AAA;
+	padding: 1%;
+	color: var( --corPrincipal );
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.selecao
+{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 3%;
+}
+
+button#btnMensagem
+{
+	width: 49%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	background-color: white;
+	border-width: 0;
+	box-shadow: 0px 0px 10px #AAA;
+	cursor: pointer;
+	font-size: 1.5vw;
+	font-family: var( --fonteTexto );
+	color: midnightblue;
+}
+
+button#btnAnuncio
+{
+	width: 49%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	background-color: midnightblue;
+	border-width: 0;
+	box-shadow: 0px 0px 10px #AAA;
+	cursor: normal;
+	font-size: 1.5vw;
+	font-family: var( --fonteTexto );
+	color: white;
+}
+
+div.alteracao
+{
+	margin-left: 10%;
+	width: 74.4%;
+	padding-top: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	box-shadow: 0px 0px 50px #AAA;
+	padding-bottom: 2%;
+}
+
+div#anuncios
+{
+    width: 100%;
+    padding-bottom: 2%;
+    
+}
+
+button#anunciar
+{
+	background-color: midnightblue;
+	width: 20%;
+	font-size: 1.5vw;
+	font-family: var( --fonteTexto );
+	padding: 1%;
+	margin-left: 39%;
+	border-width: 0;
+	color: white;
+	box-shadow: 0px 0px 10px #AAA;
+	cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    transition-duration: 0.5s;
+}
+
+button#anunciar:hover
+{
+    background-color: black;
+}
+
+hr
+{
+    background-color: #AAA;
+    height: 1px;
+    border-width: 0;
+}
+
+div.anuncioPerdaPessoa
+{
+    position: relative;
+	width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 20px #AAA;
+    padding: 1%;
+    cursor: pointer;
+}
+
+div.anuncioEncontroPessoa
+{
+	width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 20px #AAA;
+    padding: 1%;
+}
+
+div.imagemAnuncio
+{
+	width: 15vw;
+    height: 22vh;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2%;
+    box-shadow: 0px 0px 10px #555;
+}
+
+img#imagemAnuncio
+{
+	width: 100px;
+}
+
+div.textoAnuncio
+{
+    display: inline-block;
+    vertical-align: middle; 
+    width: 76%;
+    line-height: 1.5;
+}
+
+div.botoes
+{
+    width: 100%;
+    text-align: right;
+    
+}
+
+button#alterar
+{
+    position: absolute;
+    top: 0.7vw;
+    right: 4vw;
+    width: 1.5vw;
+    height: 1.5vw;
+	background-color: transparent;
+    cursor: pointer;
+    border-width: 0;
+    font-size: 1.3vw;
+    color: midnightblue;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+
+button#remover
+{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+	background-color: transparent;
+    cursor: pointer;
+    border-width: 0;
+    font-size: 1.3vw;
+    color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url('../img/botaoFechar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+div.tituloAnuncio
+{
+	font-size: 2.5vw;
+    display: inline-block;
+    vertical-align: top;
+    width: 92%;
+    color: var( --corPrincipal );
+    font-family: var( --fonteTexto );
+}
+
+div.descricao
+{
+	font-size: 1.5vw;
+    color: var( --corPrincipal );
+    font-family: var( --fonteTexto );
+}
+
+div.cidadeUF
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.3vw;
+}
+
+div.categoria
+{
+    font-family: var( --fonteTexto );
+	font-size: 1.3vw;
+}
+
+div.data
+{
+    font-family: var( --fonteTexto );
+	font-size: 1vw;
+    text-align: right;
+}
+
+div#mensagens
+{
+    padding-top: 2%;
+    display: none;
+}
+
+div.conversa
+{
+    box-shadow: 0px 0px 10px #AAA;
+    font-family: var( --fonteTexto );
+    padding: 2%;
+    width: 80%;
+    margin-left: 8%;
+    cursor: pointer;
+}
+
+div.nomeUsuario
+{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1.3vw;
+    color: var( --corPrincipal );
+    width: 50%;
+}
+
+div.nomeMensagemNova
+{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1.3vw;
+    color: var( --corPrincipal );
+    width: 50%;
+    font-weight: bold;
+}
+
+button#removerConversa
+{
+    vertical-align: middle;
+    display: inline-block;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 170%;
+    margin-left: 45%;
+    cursor: pointer;
+    color: midnightblue;
+    width: 4%;    
+}
+
+img#btnRemover
+{    
+    width: 100%;
+}
+
+div#chat
+{
+    display: none;
+    position: fixed;
+    top: 49%;
+    right: 3%;
+    height: 50%;
+    width: 25%;
+    background-color: white;
+    box-shadow: 0px 0px 10px #AAA;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+div.opcoesChat
+{
+    height: 10%;
+    width: 98%;
+    background-color: var( --corPrincipal );
+    padding: 1%;
+    box-shadow: 0px 2px 10px #AAA;
+}
+
+div.nomeChat
+{
+    font-size: 1.3vw;
+    color: white;
+    width: 87.5%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    height: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Comfortaa';
+    
+}
+
+div.fecharChat
+{
+    margin-top: 2.5%;
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img#fecharChat
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+div.exibirMensagens
+{
+    overflow: auto;
+    width: 96%;
+    height: 70%;
+    padding: 2%;
+    font-family: var( --fonteTexto );
+    background-color: #EEE;
+}
+
+div.mensagemMinha
+{
+    width: 70%;
+    margin-left: 26%;
+    height: auto;
+    margin-bottom: 2%;
+    background-color: var( --corPrincipal );
+    color: white;
+    overflow: hidden;
+    padding: 2%;
+    font-size: 1vw;
+}
+
+div.mensagemDele
+{    
+    height: auto;
+    width: 70%;
+    margin-bottom: 2%;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    padding: 2%;
+    font-size: 1vw;    
+}
+
+div.enviarMensagem
+{
+    box-shadow: 0px -2px 10px #AAA;
+    height: 18%;
+    width: 100%;
+    margin: 0;
+    vertical-align: middle;
+    background-color: white;
+}
+
+div.txtMensagem
+{
+    width: 72%;
+    padding: 2%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+textarea#txtMensagem
+{
+    width: 100%;
+    resize: none;
+    font-family: var( --fonteTexto );
+    font-size: 1vw;
+    margin: 0;
+    vertical-align: middle;
+}
+
+div.btnMensagem
+{
+    display: inline-block;
+    width: 20%;
+    margin-left: 1%;
+    vertical-align: middle;
+}
+
+input#btnMensagem
+{
+    width: 100%;
+    background-color: midnightblue;
+    padding-top: 13%;
+    padding-bottom: 13%;
+    color: white;
+    font-size: 1.3vw;
+    border-width: 0;
+    font-family: var( --fonteTexto );
+    vertical-align: middle;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+input#btnMensagem:hover
+{
+    background-color: black;
+}

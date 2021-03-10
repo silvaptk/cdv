@@ -1,0 +1,408 @@
+:root
+{
+    --fonteTexto: "Ebrima";   
+    --corPrincipal: midnightblue;
+}
+
+@font-face
+{
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.ttf');
+}
+
+html
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    --fonte: 'Ebrima';
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-90deg, midnightblue, black);
+}
+
+a
+{
+    text-decoration: none;
+    color: midnightblue;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    width: 10%;
+    height: 40%;
+}
+
+img.botaoFechar
+{
+    width: 40%;
+    position: absolute; 
+    right: 20%;
+    top: 2%;
+}
+
+div#barraSuperior
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    background-color: white;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0px 0px 0.5vw #AAA;
+    height: 13vh;
+    z-index: 2;
+}
+
+button#perfil
+{
+    margin-left: 30%;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 15%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+button#modificarInformacoes
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 25%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+button#sair
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 10%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+button#perfil:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+button#modificarInformacoes:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+button#sair:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+div.titulo:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+div.logo
+{
+    width: 10vw;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    height: 13vh;
+    cursor: pointer;
+}
+
+img#logoBarra
+{
+    height: 6vw;
+}
+
+div.titulo
+{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Comfortaa';
+    font-size: 1.5vw;
+    text-align: center;
+    margin-right: 2%;
+    color: midnightblue;
+    cursor: pointer;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+img#logo
+{
+    width: 18%;
+    margin-top: 9%;
+    margin-left: 41%;
+}
+
+div.principal
+{
+    height: 85.1vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 14.9vh;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+div.conversas
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-color: white;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    overflow-y: auto;
+    box-shadow: 0 0 1vw #AAA;
+}
+
+hr
+{
+    background-color: black;
+    border-style: none;
+    height: 1px;
+    margin: 0;
+}
+
+div.descricao
+{
+    height: 20%;
+    background-color: white;
+    font-size: 1.8vw;
+    color: midnightblue;
+    font-family: var( --fonteTexto );
+    text-align: center;
+    width: 100%;
+    margin-top: 7vw;
+    margin-right: 0;    
+}
+
+div.conversa
+{
+    padding: 1%;
+    width: 98%;
+    background-color: white;    
+    position: relative;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+div.nomeConversa
+{
+    color: midnightblue;
+    font-size: 1.5vw;
+    font-family: var( --fonteTexto );
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 1.5%;
+    margin-right: 5%;
+    height: 50%;
+    margin-left: 2%;
+}
+
+div.descricaoConversa
+{
+    padding: 4%;
+    padding-top: 0%;
+    font-size: 1.2vw;
+    font-family: var( --fonteTexto );
+    text-align: justify;
+}
+
+div.conversaAtual
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 99.2%;
+    width: 74.6%;
+    background-color: lightgrey;
+    padding: 0;
+    margin: 0;
+    margin-left: 0%;
+    overflow-y: hidden;
+    position: relative;
+    background-image: url('../img/fundoMensagens.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+div.informacoesConversa
+{
+    width: 98%;
+    background-color: white;
+    height: 10vh;
+    position: absolute;
+    padding: 1%;
+    box-shadow: 0px 5px 10px #AAA;
+}
+
+div.informacoesNomeConversa
+{
+    font-family: 'Comfortaa';
+    font-size: 3vw;
+    color: var( --corPrincipal );
+    width: 98%;
+}
+
+div.informacoesDescricaoConversa
+{    
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    color: var( --corPrincipal );
+    width: 98%;
+    text-align: left;
+}
+
+div.mensagensConversa
+{
+    background-color: white;
+    padding: 0;
+    padding-top: 12.4vh;
+    width: 100%;
+    height: 60vh;
+    overflow-y: auto;
+    font-family: var( --fonteTexto );
+    font-size: 1.3vw;
+}
+
+div.mensagemDestinatario
+{
+    background-color: black;
+    color: white;
+    margin-left: 3%;
+}
+
+div.mensagemUsuario
+{
+    background-color: var( --corPrincipal );
+    color: white;
+    margin-left: 25%;
+}
+
+div.mensagem
+{
+    width: 70%;
+    box-shadow: 0px 0px 10px #AAA;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+div.enviarMensagem
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    height: 10vh;
+    width: 98%;
+    padding: 1%;
+    box-shadow: 0px -5px 10px #AAA;
+}
+
+textarea.mensagem
+{
+    width: 80%;
+    resize: none;
+    height: 8vh;
+    font-size: 1.2vw;
+    padding: 0.5vh;
+    margin-top: 0.5vh;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: var( --fonteTexto );
+}
+
+input.mensagem
+{
+    width: 16%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5vw;
+    background-color: var( --corPrincipal );
+    color: white;
+    border-style: none;
+    height: 9vh;
+    padding: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: 1vw;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+input.mensagem:hover
+{
+    background-color: black;
+}
+
+div#ancora
+{
+    margin-top: 2vw;
+}
+
+span#mensagem{
+    text-align: left;
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+
+}
+
+span#hora{
+    font-size: 0.7vw;
+    text-align: right;
+    width: 9%;
+    height: 100%;
+    display: inline-block;
+
+}

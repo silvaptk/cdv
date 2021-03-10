@@ -1,0 +1,535 @@
+:root
+{
+    --fonteTexto: "Ebrima";   
+    --corPrincipal: midnightblue;
+}
+
+@font-face
+{
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.ttf');
+}
+
+html
+{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+    --fonte: 'Ebrima';
+}
+
+body
+{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(-90deg, midnightblue, black);
+}
+
+div#barraSuperior
+{
+    position: fixed;
+	width: 98%;
+	background-color: white;
+	padding: 0.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+    box-shadow: 0px 0px 0.5vw #AAA;
+    height: 6vw;
+    z-index: 2;
+}
+
+button#perfil
+{
+    margin-left: 30%;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 15%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 6vw;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+
+button#modificarInformacoes
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 25%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+button#sair
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 10%;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-width: 0;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-bottom-width: 0.5vw;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    transition-duration: 0.5s;
+}
+
+button#perfil:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+button#modificarInformacoes:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+button#sair:hover
+{
+    border-bottom-color: var( --corPrincipal );
+    color: var( --corPrincipal );
+}
+
+div.logo
+{
+    width: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+img#logoBarra
+{
+    height: 6vw;
+}
+
+div.titulo
+{
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Comfortaa';
+    font-size: 1.5vw;
+	text-align: center;
+	margin-right: 2%;
+    color: midnightblue;
+}
+
+img#logo
+{
+    width: 18%;
+    margin-top: 9%;
+    margin-left: 41%;
+}
+
+div#principal
+{
+    margin-top: 2%;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+form#pesquisa
+{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 2%;
+}
+
+div.campoPesquisa
+{
+    width: 100%;
+}
+
+input#txtPesquisa
+{
+    width: 97.5%;
+    padding: 0.6%;
+    font-size: 1.5vw;
+}
+
+div.carregando
+{
+    display: none;
+    color:#ff0000;
+    text-align: left;
+    vertical-align: middle;
+    width: 79%;
+    margin-left: 2%;
+    margin-right: 0%;
+    font-size: 1.5vw;
+    padding-top: 1%;
+    padding-left: 3%;
+    height: 3vw;
+    font-family: var( --fonteTexto );
+}
+
+div.campoUF
+{
+    display: inline-block;
+    margin-right: 1%;
+    font-size: 1.5vw;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 25%;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin-top: 2%;
+	color: midnightblue;
+	margin-bottom: 1%;
+    font-family: var( --fonteTexto );
+}
+
+div.campoCidade
+{
+    margin-top: 2%;
+    padding-left: 3%;
+    border-width: 1px;
+    text-align: right;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 40%;
+    line-height: normal;
+    font-size: 1.5vw;
+    display: inline-block;
+    vertical-align: middle;
+	color: midnightblue;
+	margin-bottom: 1%;
+    height: 3vw;
+    font-family: var( --fonteTexto );
+}
+
+select
+{
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/
+    /*text-align: center; /* para firefox 
+    text-align-last: center; /* para chrome*/
+    padding-left: 2%;
+    height:3vw; /* Altura do select*/
+    border:1px solid #ddd;
+    font-size: 1.5vw;
+    
+}
+
+select#campoUF
+{
+    width: 60%;
+    margin-right: 0%;
+}
+
+select#campoCidade
+{
+    width: 82%;
+    margin-left: 2%;
+    margin-right: 0%;
+}
+
+div.campoCategoria
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    width: 28%; 
+    margin-top: 1%;
+}
+
+input#btnCategoria
+{
+    background-color: midnightblue;
+    padding: 2.4%;
+    border-width: 0;
+    font-size: 1.5vw;
+    font-family: var( --fonteTexto );
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    text-align: middle;
+    z-index: 10;
+}
+
+div#categorias
+{
+    display: none;   
+    background-color: white;
+    position: absolute;
+    width: 22.6%;
+    background-color: white;
+    box-shadow: 0px 0px 10px #AAA;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 56.6%;    
+    z-index: 10;
+}
+
+input.opcaoCategoria
+{
+    
+    width: 100%;
+    font-size: 1.3vw;
+    background-color: white;
+    color: midnightblue;
+    padding: 2%;
+    border-width: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: var( --fonteTexto );
+}
+
+input.opcaoCategoria:hover
+{
+    background-color: midnightblue;
+    color: white;
+}
+
+input#btnPesquisar
+{
+    position: relative;
+    background-color: midnightblue;
+    padding: 0.7%;
+    border-width: 0;
+    font-size: 1.5vw;
+    font-family: var( --fonteTexto );
+    color: white;
+    width: 99.1%;
+    cursor: pointer;
+    margin-top: 1%;
+    transition-duration: 0.5s;
+}
+
+input#btnPesquisar:hover
+{
+    background-color: black;
+}
+
+div.tituloAnuncios
+{
+    margin-top: 3%;
+    font-size: 6vw;
+    font-family: 'Comfortaa';
+    width: 100%;
+    text-align: center;
+    color: var( --corPrincipal );
+}
+
+div.tipo
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+button#encontrei
+{
+    width: 15%;
+    margin: 0;
+    padding: 1%;
+    background-color: white;
+    color: midnightblue;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    border-width: 1px;
+    border-color: midnightblue;
+    border-style: solid;
+    cursor: pointer;
+}
+
+button#perdi
+{
+    width: 15%;
+    margin: 0;
+    padding: 1%;
+    background-color: white;
+    color: midnightblue;
+    border-color: midnightblue;
+    border-width: 1px;
+    border-style: solid;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+button#btnPessoa
+{
+    background-color: white;
+    color: midnightblue;
+    border-width: 0;
+    padding: 1%;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+button#btnInstituicao
+{
+    background-color: white;
+    color: midnightblue;
+    border-width: 0;
+    padding: 1%;
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+    width: 12%;
+    margin-top: 2%;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+hr
+{
+    margin-top: 0;
+    background-color: #AAA;
+    margin-left: 10%;
+    width: 80%;
+}
+
+div.anuncios
+{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 2%;
+    
+}
+
+div#anuncioPerda
+{
+    cursor: pointer;
+	width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 20px #AAA;
+    padding: 1%;
+}
+
+div#anuncioEncontroPessoa
+{
+    cursor: pointer;
+	width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 20px #AAA;
+    padding: 1%;
+}
+
+div#anuncioEncontroInstituicao
+{
+    cursor: pointer;
+	width: 98%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 20px #AAA;
+    padding: 1%;
+}
+
+div.imagemAnuncio
+{
+	width: 15vw;
+    height: 22vh;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2%;
+    box-shadow: 0px 0px 10px #555;
+}
+
+img#imagemAnuncio
+{
+	width: 100px;
+}
+
+div.textoAnuncio
+{
+    display: inline-block;
+    vertical-align: middle; 
+    width: 71%;
+    line-height: 1.5;
+    display: inline-block;
+}
+
+div.botoes
+{
+    width: 100%;
+    text-align: right;
+    
+}
+
+div.tituloAnuncio
+{
+	font-size: 2.5vw;
+    color: var( --corPrincipal );
+    font-family: var( --fonteTexto );
+}
+
+div.descricao
+{
+	font-size: 1.8vw;
+    color: var( --corPrincipal );
+    font-family: var( --fonteTexto );
+}
+
+div.cidadeUF
+{
+    font-family: var( --fonteTexto );
+    font-size: 1.5vw;
+}
+
+div.categoria
+{
+    font-family: var( --fonteTexto );;
+	font-size: 1.5vw;
+}
+
+div.data
+{
+    text-align: right;
+    font-family: var( --fonteTexto );;
+	font-size: 1.3vw;
+}
+
+div.sombra
+{
+    display: none;
+    background-color: black;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+}

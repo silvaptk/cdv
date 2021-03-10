@@ -1,0 +1,340 @@
+:root
+{
+    --fonteTexto: "Ebrima";   
+    --corPrincipal: midnightblue;
+}
+
+html
+{
+	height: 100%;
+}
+
+@font-face
+{
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.ttf');
+}
+
+body
+{
+    background-image: url('../img/11.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: var( --fonteTexto );
+	height: 100%;
+    padding: 0;
+}
+
+div#principal
+{
+    background-color: white;
+    width: 60%;
+    margin: 0;
+    margin-left: 20%;
+    padding: 0;
+	opacity: 0.97;
+    vertical-align: middle;
+    height: 100%;
+}
+
+input#voltar	
+{
+    padding: 0;
+    background-color: white;
+    border-width: 0;
+    color: var( --corPrincipal );  
+    cursor: pointer;
+	font-family: var( --fonteTexto );
+    font-size: 1vw;
+	padding: 0.9%;
+	width: 10%;
+	margin-left: 1.2%;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: top;
+}
+
+input#voltar:hover
+{
+    box-shadow: 0px 0px 5px #BBB;
+}
+
+div.titulo
+{
+    margin-top: 1%;
+    width: 100%;
+    font-family: 'Comfortaa';
+    font-size: 5vw;
+    text-align: center;
+    color: var( --corPrincipal );  
+	vertical-align: middle;
+	display: inline-block;	
+}
+
+div.subtitulo
+{
+    font-size: 1.4vw;
+    margin-left: 70%;
+    font-family: 'Comfortaa';
+    color: var( --corPrincipal );  
+}
+
+div.tipo
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+button#encontrei
+{
+    width: 15%;
+    margin: 0;
+    padding: 1%;
+    background-color: midnightblue;
+    color: white;
+    font-family: var( --fonteTexto );
+    font-size: 1vw;
+    border-width: 1px;
+    border-color: midnightblue;
+    border-style: solid;
+}
+
+button#perdi
+{
+    width: 15%;
+    margin: 0;
+    padding: 1%;
+    background-color: white;
+    color: midnightblue;
+    border-color: midnightblue;
+    border-width: 1px;
+    border-style: solid;
+    font-family: var( --fonteTexto );
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+form#formularioCadastro
+{
+    margin-top: 6%;
+}
+
+div.campo
+{
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var( --corPrincipal );  
+    width: 70%;
+    line-height: normal;
+    margin-left: 15%;
+    font-size: 1vw;
+	color: var( --corPrincipal );  
+	margin-bottom: 1%;
+}
+
+div.campoDescricao
+{
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var( --corPrincipal );  
+    width: 70%;
+    line-height: normal;
+    margin-left: 15%;
+    font-size: 1vw;
+	color: var( --corPrincipal );  
+    padding: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 0;
+}
+
+textarea#descricao
+{
+    margin-top: 0;
+    margin: 0;
+    margin-left: 15%;
+    width: 70%;
+    border-width: 0px;
+    border-color: var( --corPrincipal );  
+    resize: none;
+    height: 100%;
+    background-color: var( --corPrincipal );  
+    margin-bottom: 0;
+    font-size: 1vw;
+    color: white;
+    font-family: var( --fonteTexto );
+    height: 100%;
+    margin-bottom: 0.9%;
+}
+
+input#imagens
+{
+    background-color: midnightblue;
+    font-family: var( --fonteTexto );
+    width: 70%;
+    margin-left: 15%;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
+
+img#estrela1
+{
+
+    width: 10%;
+    height: 10%;
+    margin-left: 17.5%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    background-image: url('../img/estrelaBranca.png');
+}
+
+img#estrela2
+{
+    width: 10%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+
+img#estrela3
+{
+    width: 10%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+img#estrela4
+{
+    width: 10%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+img#estrela5
+{
+    width: 10%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+div.listarImagens
+{
+    margin-left: 15%;
+    padding: 1.5%;
+    width: 66.8%;
+    border-color: midnightblue;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 1%;
+    font-size: 0.8vw;
+}
+
+div.campoCategoria
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 70%;
+    line-height: normal;
+    margin-left: 15%;
+    font-size: 1vw;
+	color: var( --corPrincipal );  
+    padding: 0;
+    margin-bottom: 1%;
+}
+
+div.coluna1
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 49.15%;
+    margin: 0;
+}
+div.coluna2
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 49.15%;
+    margin: 0;
+}
+
+input#categoria1
+{
+    width: 100%;
+    margin: 0;
+    font-family: var( --fonteTexto );
+    font-size: 1vw;
+    background-color: white;
+    color: midnightblue;
+    cursor: pointer;    
+}
+
+input#categoria2
+{
+    width: 100%;
+    margin: 0;
+    font-family: var( --fonteTexto );
+    font-size: 1vw;
+    background-color: white;
+    color: midnightblue;
+    cursor: pointer;  
+    text-align: right;
+}
+
+input#categoria1:hover
+{
+    background-color: midnightblue;
+    color: white;
+}
+
+input#categoria2:hover
+{
+    background-color: midnightblue;
+    color: white;
+}
+
+input
+{
+    width: 70%;
+    margin-left: 1%;
+    height: 100%;
+    background-color: var( --corPrincipal );  
+    border-width: 0;
+    padding: 1%;
+    color: white;
+    font-size: 1vw;
+}
+
+div.mensagemErro
+{
+    font-size: 1vw;
+    color: red;
+    text-align: center;
+    margin: 1%;
+    margin-top: 1.5%;
+}
+
+input#botao
+{
+    background-color: midnightblue;
+    color: white;
+    width: 50%;
+    margin: 1%;
+    margin-left: 18%;
+    font-size: 1vw;
+    cursor: pointer;
+	font-family: var( --fonteTexto );
+    border-width: 0;
+    padding: 1%;  
+	vertical-align: middle;
+	display: inline-block;
+}

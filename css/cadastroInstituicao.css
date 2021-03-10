@@ -1,0 +1,614 @@
+:root 
+{
+    --huge: 4rem;
+    --large: 1.6rem; 
+    --default: 0.8rem;
+}
+
+* 
+{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    font-family: 'Ebrima';
+}
+
+html
+{
+	height: 100%;
+    width: 100%;
+}
+
+@font-face
+{
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.ttf');
+}
+
+body
+{
+    background-image: url('../img/5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    font-family: 'Ebrima';
+	
+    height: 100%;
+    width: 100%;
+    
+    margin: 0;
+	padding: 0;
+}
+
+/* CABEÇALHO */
+
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+    width: 60%; 
+    margin-left: 20%;
+    height: 30%;
+    padding: 8% 8% 4% 8%;
+    
+    background-color: white;
+    
+    border: none; 
+}
+
+img#logo
+{
+    width: 20%;   
+}
+
+div.cabecalho
+{
+    width: 60%;
+}
+
+div.titulo
+{
+	display: inline-block;
+    width: 100%;
+
+    font-family: 'Comfortaa';
+    font-size: var(--huge);
+    text-align: left;
+    
+    color: midnightblue;   
+}
+
+div.usuario
+{
+	display: inline-block;	
+    width: 100%;
+
+    font-size: var(--large);
+    font-family: 'Comfortaa';
+    text-align: right;
+
+    color: midnightblue;
+}
+
+main
+{
+    display: block;
+    
+    width: 60%;
+    height: 72%;
+    
+    margin-left: 20%;
+    margin-top: -1%;
+	padding: 4% 8% 8% 8%;
+    
+    border: none;
+
+    background-color: white;
+}
+
+/* FORMULÁRIO DE CADASTRO */
+
+form
+{
+    width: 85%;
+    margin-left: 12.5%;
+}
+
+label
+{
+    display: block;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 100%;
+    line-height: normal;
+    font-size: 1vw;
+	color: midnightblue;
+	margin-bottom: 3%;
+
+    width: 48.5%;
+    height: 1.8rem;
+}
+
+form > label:last-child
+{
+    width: 100%;
+}
+
+fieldset
+{
+    border: none; 
+
+    margin: 0; 
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label.campoCidade
+{
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 60%;
+    line-height: normal;
+    font-size: 1vw;
+    display: inline-block;
+    vertical-align: middle;
+	color: midnightblue;
+    margin-bottom: 3%;
+}
+
+input#campoCidade
+{
+    width: 58%;
+    padding: 1.3%;
+    font-size: 1vw;
+    margin-left: 1%;
+}
+
+label.campoUF
+{
+    font-size: 1vw;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 37%;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;    
+	color: midnightblue;
+    margin-bottom: 3%;
+}
+
+input#campoUF
+{
+    width: 60%;
+    font-size: 1vw;
+    margin: 0;
+    margin-left: 1%;
+    height: 1.8rem;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+label.campoComplemento
+{
+	font-size: 1vw;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 67%;
+    line-height: normal;
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: middle;    
+	color: midnightblue;
+    margin-bottom: 3%;
+}
+
+input#complementoEndereco
+{
+	width: 55%;
+    font-size: 1vw;
+    margin: 0;
+    padding: 1.8%;
+    margin-left: 3%;
+    height: 100%;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+label.campoNumero
+{
+	font-size: 1vw;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 30%;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;    
+	color: midnightblue;
+	margin-bottom: 1%;
+    margin-bottom: 3%;
+}
+
+input#numeroEndereco
+{
+	width: 50%;
+    font-size: 1vw;
+    margin: 0;
+    padding: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 3%;
+    height: 100%;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+label.campoContato
+{
+    font-size: 1vw;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 70%;
+    line-height: normal;
+    display: inline-block;
+	color: midnightblue;	
+}
+
+input#campoContato
+{
+    width: 70%;
+    margin-left: 1%;
+    font-size: 1vw;
+    padding: 1.3%;
+}
+
+label.logradouro 
+{
+    width: 62%;
+}
+
+label.bairro 
+{
+    width: 35%;
+}
+
+input#bairro 
+{
+    width: 60%;
+    margin-left: 1%;
+}
+
+button#adicionarContato:hover
+{
+    background-color: black;
+}
+
+input
+{
+    width: 70%;
+    margin-left: 1%;
+    height: 100%;
+    background-color: midnightblue;
+    border-width: 0;
+    padding: 1%;
+    color: white;
+    font-size: 1vw;
+    outline: none;
+}
+
+input::placeholder 
+{
+    color: #ccc;
+}
+
+input#rotinaAtendimento
+{
+    background-color: midnightblue;
+    color: white;
+    width: 100%;
+    margin: 0;
+    font-size: 1vw;
+    cursor: pointer;
+	font-family: 'Ebrima';
+    border-width: 0;
+    height: 1.8rem;
+	margin-bottom: 3%;
+    transition-duration: 0.3s;
+}
+
+input#rotinaAtendimento:hover
+{
+    background-color: black;
+}
+
+div#dadosRotina ~ label 
+{
+    width: 100%; 
+}
+
+div.mensagemErro
+{
+    font-size: 1vw;
+    color: red;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+div#mensagemErroRotina
+{
+    font-size: 1vw;
+    color: red;
+    text-align: center;
+    margin: 1%;
+    margin-top: 1.5%;
+}
+
+/* FINALIZAR CADASTRO */
+
+div.finalizar 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input#botao
+{
+    background-color: midnightblue;
+    color: white;
+    width: 60%;
+    font-size: 1vw;
+    cursor: pointer;
+	font-family: 'Ebrima';
+    border: none;
+	display: inline-block;
+    transition-duration: 0.3s;
+    height: 1.8rem;
+}
+
+input#botao:hover
+{
+    background-color: black;
+}
+
+input#voltar	
+{
+    padding: 0;
+    background-color: white;
+    border-width: 0;
+    color: midnightblue;    
+    cursor: pointer;
+	font-family: 'Ebrima';
+    font-size: 1vw;
+	width: 37%;
+    height: 1.8rem;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: top;
+}
+
+input#voltar:hover
+{
+    box-shadow: 0px 0px 5px #BBB;
+}
+
+/* MODAL */
+
+div#fundoPreto
+{
+	position: fixed;
+	top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.7;
+}
+
+div#formularioRotina
+{
+	background-color: #FFFFFF;
+	position: absolute;
+	padding: 3%;
+	padding-top: 1%;
+	top: 12.5%;
+	left: 17%;	
+	height: 75%;
+	width: 60%;
+    box-shadow: 0px 0px 30px #111111;
+}
+
+div.informacaoSair
+{
+	color: midnightblue;
+	font-size: 1vw;
+	text-align: right;
+}
+
+div.tituloRotina
+{
+	font-family: 'Comfortaa';
+	font-size: 3vw;
+	color: midnightblue;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+div.preencher 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.botoesDia
+{
+	width: 30%;
+}
+
+button.diaSemana
+{
+    width: 100%;
+    height: 1.8rem;
+    margin-bottom: 3%;
+	font-size: var(--default);
+	background-color: white;
+	color: midnightblue;
+	border-width: 1px;
+	border-color: midnightblue;
+	cursor: pointer;
+    transition-duration: 0.3s;
+    outline: none;
+}
+
+button.diaSemana:hover
+{
+	background-color: midnightblue;
+	color: white;
+}
+
+div.camposHora
+{
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Ebrima';
+	width: 67%;
+}
+
+div#diaAtual
+{
+	font-size: var(--large);
+	color: midnightblue;
+	width: 100%;
+	text-align: justify;
+}
+
+div.informacaoPreenchimento
+{
+    font-size: var(--default);
+    color: midnightblue;
+    margin-top: 3%;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 3%;
+}
+
+input#campoDe
+{
+    font-size: var(--default);
+    width: 70%;
+	text-align: center;
+    font-family: 'Ebrima';
+}
+
+div.campoAte
+{
+	text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: midnightblue;
+    width: 30%;
+    line-height: normal;
+    font-size: var(--default);
+	color: midnightblue;
+	margin-bottom: 2%;
+    display: inline-block;
+}
+
+input#campoAte
+{
+    font-size: var(--default);
+    width: 70%;
+	text-align: center;
+    font-family: 'Ebrima';
+}
+
+div.integral
+{
+	text-align: center;
+    line-height: normal;
+    font-size: var(--default);
+	color: midnightblue;
+    display: inline-block;
+}
+
+div.naoAbre
+{
+	text-align: center;
+    width: 20%;
+    line-height: normal;
+    margin-left: 5%;
+    font-size: 1vw;
+	color: midnightblue;
+    display: inline-block;
+}
+
+div.outrosHorarios 
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input#integral, input#naoAbre
+{
+    width: 48.5%;
+    height: 1.8rem;
+
+    margin: 0;
+    cursor: pointer;
+
+    transition-duration: 0.3s;
+
+    background-color: white; 
+    color: midnightblue; 
+
+    border-style: solid; 
+    border-color: midnightblue;
+    border-width: 1px;
+}
+
+input#integral:hover, input#naoAbre:hover 
+{
+    background-color: midnightblue;
+    color: white;
+}
+
+button#verificar
+{
+    background-color: midnightblue;
+    color: white;
+    width: 70%;
+    margin: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+	font-family: 'Ebrima';
+    border-width: 0;
+    padding: 1%;
+    margin-left: 15%;	
+	margin-bottom: 1%;
+    transition-duration: 0.5s;
+}
+
+button#verificar:hover
+{
+	background-color: black;
+}

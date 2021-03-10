@@ -1,0 +1,330 @@
+:root 
+{
+    --huge: 4rem;
+    --large: 1.2rem;
+    --default: 0.8rem;
+}
+* 
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    height: 100%;
+}
+
+@font-face
+{
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-Regular.ttf');
+}
+
+body
+{
+    margin: 0;
+    font-family: 'Ebrima';
+    border-width: 0;
+    line-height: 1.5;
+    background-image: url('../img/11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main
+{   
+    width: 80%;
+	background-color: white;
+    height: 100%;
+    padding: 5%;
+}
+
+div.logo
+{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img#logo
+{
+    width: 25%;
+    height: 25%;
+    vertical-align: middle;
+}
+
+div.logo span 
+{
+    display: inline-block;
+    font-family: 'Comfortaa';
+    font-size: var(--huge);
+    text-align: center;
+    vertical-align: middle;
+    color: midnightblue;
+    width: 75%;
+}
+
+div.alinhar 
+{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.descricao       
+{
+    font-size: var(--large);
+    color: midnightblue;
+    width: 25%;
+    border-width: 1.5px;
+    padding: 1%;
+    border-style: solid;
+    border-color: white;
+    border-top-color: midnightblue;
+    text-align: justify;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.entrar
+{
+	font-family: 'Ebrima';
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    padding: 1%;
+    border-style: solid;
+    border-width: 0;
+    -webkit-border-radius: 0.4vw;
+    border-radius: 0.2vw;
+    box-shadow: 0px 0px 20px #AAAAAA;
+    margin-top: 3%;
+    font-size: 1rem;
+}
+
+button#botaoInstituicao
+{
+    width: 50%;
+    padding: 2%;
+    background-color: midnightblue;
+    color: white;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: midnightblue;
+    border-radius: 0; 
+    -webkit-border-radius: 0;
+    cursor: default;
+    font-size: var(--default);
+	font-family: 'Ebrima';
+    outline: none;
+}
+
+button#botaoPessoa
+{
+    width: 50%;
+    padding: 2%;
+    background-color: white;
+    color: midnightblue;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: midnightblue;
+    border-radius: 0; 
+    -webkit-border-radius: 0;
+    cursor: pointer;
+    z-index: 0;
+    font-size: var(--default);
+	font-family: 'Ebrima';
+    outline: none;
+}
+
+div#mensagemErro
+{
+    text-align: center;
+    padding: 2%;
+    margin-top: 2%;
+    font-size: 0.65rem;
+    font-family: 'Ebrima';
+    color: red;
+}
+
+div.formularioInstituicao
+{
+    width: 100%;    
+}
+
+form
+{
+    margin: 2% 2% 4%;    
+    color: midnightblue;
+    font-size: 1vw;
+}
+
+div.campo
+{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 0.07rem;
+    border-color: midnightblue;
+    
+    text-align: right;
+    font-size: var(--default);
+    line-height: normal;
+    
+    width: 100%;
+    
+    padding: 0;
+    margin-bottom: 4%;
+}
+
+label
+{
+    font-size: var(--default);
+    line-height: normal;
+    width: 30%; 
+}
+
+input
+{
+    width: 70%;
+    margin: 0 0 0 1%;
+    padding: 1.5%;
+
+    border-style: none;
+    outline: none;
+
+    color: white;
+	background-color: midnightblue;
+    
+    line-height: normal;
+    font-size: var(--default);
+}
+
+input#botao
+{
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+
+    background-color: midnightblue;
+    color: white;
+    
+    font-size: var(--default);
+    cursor: pointer;
+	
+    font-family: 'Ebrima';
+    transition-duration: 0.2s;
+    height: auto;
+}
+
+input#botao:hover
+{
+    background-color: black;
+}
+
+button#cadastro
+{
+    background-color: white;
+    color: midnightblue;
+
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+   
+    border-width: 0;
+    cursor: pointer;
+	
+    font-family: 'Ebrima';
+    font-size: var(--default);
+    
+    transition-duration: 0.2s;
+}
+
+button#cadastro:hover
+{
+    box-shadow: 0px 0px 5px #aaa;
+}
+
+@media (max-aspect-ratio: 4/3) 
+{
+    main 
+    {
+        width: 100%;
+    }
+
+    div.alinhar 
+    {
+        margin-top: 15vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) 
+{
+    main 
+    {
+        display: block;
+        justify-content: center;
+    }
+
+    div.logo
+    {
+        display: block;
+        width: 100%; 
+    }
+
+    img#logo 
+    {
+        display: block;
+        width: 30%; 
+        margin: 0 35% 0;
+    }
+
+    div.logo span 
+    {
+        display: block;
+        width: 100%; 
+        font-size: 3rem;
+    }
+
+    div.alinhar 
+    {
+        display: block;
+        margin-top: 5vh;
+    }
+
+    div.descricao
+    {
+        display: block;
+        margin: 5vh 25% 0;
+        width: 50%;
+    }
+
+    div.entrar 
+    {
+        display: block;
+        width: 80%;
+        margin: 5vh 10% 0; 
+    }
+
+    
+}
+
+@media (min-width: 1500px) 
+{
+    :root 
+    {
+        --huge: 4.8rem;
+        --large: 1.44rem;
+        --default: 0.96rem;
+    }
+}
