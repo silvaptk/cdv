@@ -1,5 +1,3 @@
-# cdv
-Cabeça de Vento é um projeto de plataforma online para anúncio de objetos achados e perdidos.
 # Cabeça de Vento
 
 ## Sobre o projeto
