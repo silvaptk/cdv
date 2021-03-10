@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset = "UTF-8">
+        <title> Cabeça de Vento </title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "../css/chatPessoa.css"> 
+        <script type = "text/javascript" src = "../js/chatPessoa.js"></script>
+        <script rel = "text/javascript" src = "../js/jsiAPI.js"></script>
+    </head>
+    <body onload = "window.location.href = '#ancora'">
+        <div id = "barraSuperior">
+            <div class = "logo"><img src = "../img/logoBlue.png" id = "logoBarra"></div><div class = "titulo">Cabeça<br>de<br>Vento</div>
+            <button id = "perfil" onclick = "window.location.href = 'perfilPessoa.php'">Meu perfil</button>
+            <button id = "modificarInformacoes" onclick = "window.location.href = 'modificarCadastroPessoa.php'">Modificar informações</button>
+            <button id = "sair" onclick = "window.location.href = 'index.php'">Sair</button>
+		</div>
+        <div class = "principal" id = "pnlPrincipal">
+            <div class = "conversas" id = "pnlConversas">
+                <div class = "descricao" id = "pnlDescricaoConversas">Prelúdio</div>
+                <hr>
+                <div class = "conversa" id = "pnlConversa">
+                    <div class = "nomeConversa" id = "lblNome">Nome do usuário</div>
+                    <a href = "#" class = "removerConversa" id = "btnRemover"><img src = "../img/botaoFechar.png" class = "botaoFechar">
+                    </a>
+                    <div class = "descricaoConversa" id = "lblDescricao"> Nome do anúncio em questão </div>
+                </div>                       
+                <hr>
+                <div class = "conversa" id = "pnlConversa">
+                    <div class = "nomeConversa" id = "lblNome">Nome do usuário</div>
+                    <a href = "#" class = "removerConversa" id = "btnRemover"><img src = "../img/botaoFechar.png" class = "botaoFechar">
+                    </a>
+                    <div class = "descricaoConversa" id = "lblDescricao">Nome do anúncio em questão</div>
+                </div>                      
+                <hr>
+                <div class = "conversa" id = "pnlConversa">
+                    <div class = "nomeConversa" id = "lblNome">Nome do usuário</div>
+                    <a href = "#" class = "removerConversa" id = "btnRemover"><img src = "../img/botaoFechar.png" class = "botaoFechar">
+                    </a>
+                    <div class = "descricaoConversa" id = "lblDescricao">Nome do anúncio em questão </div>
+                </div>                      
+                <hr>
+                <div class = "conversa" id = "pnlConversa">
+                    <div class = "nomeConversa" id = "lblNome">Nome do usuário</div>
+                    <a href = "#" class = "removerConversa" id = "btnRemover"><img src = "../img/botaoFechar.png" class = "botaoFechar">
+                    </a>
+                    <div class = "descricaoConversa" id = "lblDescricao">Nome do anúncio em questão</div>
+                </div>              
+            </div>
+            <div class = "conversaAtual" id = "pnlConversaAtual">
+                <div class = "informacoesConversa" id = "pnlInformacoesConversa">
+                    <div class = "informacoesNomeConversa" id="informacoesNomeConversa">Nome do usuário</div>
+                    <div class = "informacoesDescricaoConversa" id="informacoesDescricaoConversa">Nome do anúncio em questão</div>
+                </div>
+                <div class = "mensagensConversa" id="mensagensConversa">
+                    <div class = "mensagem mensagemDestinatario" id="mensagemDestinatario">Eta pô</div>
+                    <div class = "mensagem mensagemUsuario" id="mensagemUsuario">Eta pôEta pôEta </div>
+                    <div id="ancora"></div>
+                </div>
+                <div class = "enviarMensagem">
+                    <form id = "frmEnviar" name="frmEnviar" class = "enviarMensagem" action="enviarMensagem.php" method="POST">
+                        <textarea id = "txtMensagem" class = "mensagem"></textarea>
+                        <input type = "button" id = "btnEnviar" class = "mensagem" value = "Enviar" onclick="carregaChat();enviarMensagem();">
+                        <!-- setInterval(carregaChat,10000); -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            google.load("jquery", "1.4.2");
+        </script>
+        <script type="text/javascript">
+            function carregaChat()
+            {
+                $(function(){
+                    $.getJSON('preencheChat.php?search=',{codigoConversa: '3', ajax: 'true'}, function(msg)
+                    {
+                        //Informações do topo
+                        document.getElementById('informacoesNomeConversa').innerHTML = msg[0].destinatario;
+                        document.getElementById('informacoesDescricaoConversa').innerHTML = msg[0].anuncio;
+
+                        //removendo a div que contém as mensagem para apagar as mensagens
+                        document.getElementById("mensagensConversa").remove();
+
+                        //recriando a div de mensagens
+                        var div = document.createElement('div');
+                        div.setAttribute( "id","mensagensConversa");
+                        div.setAttribute( "class","mensagensConversa");
+                        document.getElementById("pnlConversaAtual").appendChild(div);                  
+                        
+                        //Mensagens entre os usuários
+                        for (var i = 0; i < msg.length; i++)
+                        {
+                            if(msg[i].usuario == 1)//codigo da sessão do cara
+                            {           
+                                //USUARIO
+                                var div = document.createElement('div');
+                                div.setAttribute( "id","mensagemUsuario");
+                                div.setAttribute( "class","mensagem mensagemUsuario");
+                                div.innerHTML = msg[i].mensagem;
+                                document.getElementById('mensagensConversa').appendChild( div );
+                            }
+                            else
+                            {
+                                //DESTINARÁRIO
+                                var div = document.createElement( "div" );
+                                div.setAttribute( "id","mensagemDestinatario" );
+                                div.setAttribute( "class","mensagem mensagemDestinatario");
+                                div.innerHTML = msg[i].mensagem;
+                                document.getElementById('mensagensConversa').appendChild( div );
+                            }                            
+                        }
+                        //div de ancora para descer até a ultima mensagem
+                        var div = document.createElement( "div" );
+                        div.setAttribute( "id","ancora");
+                        document.getElementById('mensagensConversa').appendChild( div );
+
+                        //levando-o até a ultima mensagem
+                        window.location.href = '#ancora';                       
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>
