@@ -15,6 +15,5 @@
 	$host = '';
 	$bdUser = ''; 
     $bdPwd = '';
-
 	$bd = new foo_mysqli($host, $bdUser, $bdPwd, 'cabeca_de_vento');
 ?>
