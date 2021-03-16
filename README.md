@@ -29,4 +29,10 @@ Fique à vontade para enviar quaisquer sugestões via LinkedIn (https://linkedin
 
 ## Observações 
 
+### Primeira observação
+
 Os arquivos do projeto estão sendo exibidos aos poucos, pois estou os revisando.
+
+### Segunda observação
+
+Esqueci de notar antes, mas é muito importante: se for testar a aplicação em sua máquina, é preciso alterar as credenciais da conexão com o banco de dados, e eventualmente o `host`, no arquivo `php/conexao.php`. No caso contrário, a aplicação não funcionará, tendo em vista que depende do banco de dados de forma majoritária.
