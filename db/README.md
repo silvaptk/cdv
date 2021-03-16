@@ -1,6 +1,6 @@
 # Instruções de geração do banco de dados
 
-Para utilizar o banco de dados com o endereçamento já inserido, você pode baixar o arquivo `.sql` de *dump* em https://1drv.ms/u/s!Ars0gs5ebRPkgbYpvYCgNgeRbQAf1Q?e=QwX3pg. Depois de baixá-lo, basta executá-lo da forma que preferir. O banco de dados `cabeca_de_vento` será criado.
+Para utilizar o banco de dados na aplicação, você deve baixar o arquivo `.sql` de *dump* em https://1drv.ms/u/s!Ars0gs5ebRPkgbYpvYCgNgeRbQAf1Q?e=QwX3pg (ele era muito grande para ser carregado no GitHub, por conta do endereçamento). Depois de baixá-lo, basta executá-lo da forma que preferir. O banco de dados `cabeca_de_vento`.
 
 O *script* responsável pela criação do banco de dados está em `cabeca_de_vento.sql`. Ele gera as tabelas, e preenche as necessárias.
 
