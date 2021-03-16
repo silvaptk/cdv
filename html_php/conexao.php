@@ -12,7 +12,9 @@
 	}	
 	
     // É preciso preencher as credenciais a seguir para que a conexão suceda
-    $bdHost = ''; 
+	$host = '';
+	$bdUser = ''; 
     $bdPwd = '';
-	$bd = new foo_mysqli('localhost', $bdHost, $bdPwd, 'cabeca_de_vento');
+
+	$bd = new foo_mysqli($host, $bdUser, $bdPwd, 'cabeca_de_vento');
 ?>
